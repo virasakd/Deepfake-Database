@@ -612,6 +612,34 @@ progress {
   height: auto;
 }
 
+/* Desmond Holmes Changes to the css file*/
+
+.main_image-class {
+  /* float: left; 
+  border-radius: 3%; 
+  min-height: 30rem; */
+  border-radius: 3%; 
+  min-height: 30rem;
+ 
+
+
+  background-size: cover;
+  box-shadow: 2px 2px 10px rgba(56, 55, 55, 0.9);
+  margin-top: 10px;
+  
+}
+@media screen and (max-width: 880px) {
+    .main_image-class {
+      width: 80%; /* set the width to fill the screen */
+      height: auto; /* set the height to auto so the aspect ratio is maintained */
+    }
+}
+
+.navbar-image{
+  max-height: 80px;
+  max-width: 80px;
+}
+
 .figure {
   display: inline-block;
 }
@@ -7837,7 +7865,8 @@ textarea.form-control-lg {
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(192,192,192);
+  /* background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important; */
 }
 
 .bg-dark {
@@ -11303,7 +11332,7 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background: url("../assets/img/background.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -11332,9 +11361,11 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .showcase .showcase-text {
+  background-color: rgba(128, 128, 128, 1);
   padding: 3rem;
 }
 .showcase .showcase-img {
+  background-color: black;
   min-height: 30rem;
   background-size: cover;
 }
